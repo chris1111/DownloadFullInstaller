@@ -1,0 +1,12 @@
+{
+  "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/FetchInstallerPkg/Model/MetaInfo.swift" : {
+    "abi-baseline-json" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/Download_Full_Installer.abi.json",
+    "const-values" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/DownloadFullInstaller-primary.swiftconstvalues",
+    "dependencies" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/DownloadFullInstaller-primary.d",
+    "diagnostics" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/DownloadFullInstaller-primary.dia",
+    "objc-header" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/Download_Full_Installer-Swift.h",
+    "swiftdoc" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/Download_Full_Installer.swiftdoc",
+    "swiftmodule" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/Download_Full_Installer.swiftmodule",
+    "swiftsourceinfo" : "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/build/DownloadFullInstaller.build/Release/DownloadFullInstaller.build/Objects-normal/x86_64/Download_Full_Installer.swiftsourceinfo"
+  }
+}

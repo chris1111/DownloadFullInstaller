@@ -1,0 +1,40 @@
+{
+  "source": "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/FetchInstallerPkg/View/DownloadView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": " ",
+        "location": {
+          "startingColumn": 11,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": " ",
+        "location": {
+          "startingColumn": 11,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": " ",
+        "location": {
+          "startingColumn": 11,
+          "startingLine": 31
+        }
+      },
+      {
+        "comment": "",
+        "key": " ",
+        "location": {
+          "startingColumn": 11,
+          "startingLine": 37
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,16 @@
+{
+  "source": "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/FetchInstallerPkg/View/InstallerView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "%@ already exists. Do you want to replace it?",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 72
+        }
+      }
+    ]
+  },
+  "version": 1
+}

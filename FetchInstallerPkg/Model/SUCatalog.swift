@@ -33,16 +33,16 @@ class SUCatalog: ObservableObject {
             let task = session.dataTask(with: $0) { data, response, error in
 
                 if error != nil {
-                    print("\(self.thisComponent) : \(error!.localizedDescription)")
+                    print("### \(self.thisComponent) : \(error!.localizedDescription)")
                     return
                 }
 
                 let httpResponse = response as! HTTPURLResponse
                 if httpResponse.statusCode != 200 {
-//                    print("\(self.thisComponent) : \(httpResponse.statusCode)")
+//                    print("### \(self.thisComponent) : \(httpResponse.statusCode)")
                 } else {
                     if data != nil {
-//                        print("\(self.thisComponent) : \(String(decoding: data!, as: UTF8.self))")
+//                        print("### \(self.thisComponent) : \(String(decoding: data!, as: UTF8.self))")
                         DispatchQueue.main.async {
                             self.decode(data: data!)
                         }
@@ -66,9 +66,7 @@ class SUCatalog: ObservableObject {
         catalog = try! decoder.decode(Catalog.self, from: data)
 
         if let products = products {
-            // Build the installers array without triggering multiple SwiftUI updates
-            var newInstallers: [Product] = []
-            
+
             for (productKey, product) in products {
                 product.key = productKey
                 if let metainfo = product.extendedMetaInfo {
@@ -76,28 +74,18 @@ class SUCatalog: ObservableObject {
                         if !uniqueInstallersList.contains(productKey) {
                             // this is an installer, add to list
                             uniqueInstallersList.append(productKey)
-                            newInstallers.append(product)
+                            installers.append(product)
+                            product.loadDistribution()
                         }
                     }
                 }
 
             }
 
-//            print("\(self.thisComponent) : \(products.count) products found")
-//            print("\(self.thisComponent) : \(self.installers.count) installer pkgs found")
+//            print("### \(self.thisComponent) : \(products.count) products found")
+//            print("### \(self.thisComponent) : \(self.installers.count) installer pkgs found")
 
-            // Sort and assign once to minimize SwiftUI updates
-            newInstallers.sort { $0.postDate > $1.postDate }
-            installers = newInstallers
-            
-            // Defer loadDistribution() calls to avoid reentrant NSTableView operations
-            // Use asyncAfter to ensure the List view completes its initial rendering
-            // before the @Published properties in Product are updated
-            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-                for product in self.installers {
-                    product.loadDistribution()
-                }
-            }
+            installers.sort { $0.postDate > $1.postDate }
         }
 
     }

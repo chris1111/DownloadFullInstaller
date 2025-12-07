@@ -1,0 +1,16 @@
+{
+  "source": "/Users/chris/Downloads/DownloadFullInstaller-ee215b1cfd001e8ff0e123d135ec4cbea4328033/FetchInstallerPkg/View/PreferencesView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "osNameID",
+        "location": {
+          "startingColumn": 13,
+          "startingLine": 28
+        }
+      }
+    ]
+  },
+  "version": 1
+}

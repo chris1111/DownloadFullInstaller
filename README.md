@@ -1,18 +1,18 @@
 # Download Full Installer
 
-![Swift](https://img.shields.io/badge/Swift-5+-lavender.svg)
+[![DownloadFullInstaller](https://github.com/perez987/DownloadFullInstaller/actions/workflows/Build.yml/badge.svg)](https://github.com/perez987/DownloadFullInstaller/actions/workflows/Build.yml)
 ![Platform](https://img.shields.io/badge/macOS-13+-orange.svg)
 ![Downloads](https://img.shields.io/github/downloads/perez987/DownloadFullInstaller/total?label=Downloads&color=9494ff)
 
 As of June 2025, [DownloadFullInstaller](https://github.com/scriptingosx/DownloadFullInstaller) by <em>scriptingosx</em> has been archived by the developer. For over three years, my DownloadFullInstaller repo was a fork of the source. However, after it was archived, I created a new repo. This new repo is a standalone (<em>not forked</em>) version. I'll keep this project active and up to date as long as it is useful to other users.
 
-<img src="Images/Main-window1.png" width="700px">
+<img src="Images/Main-window.png" width="700px">
 
 ### Download Full Installer from macOS 13 up to 26 
 
 Download Full Installer runs on macOS 13 Ventura through macOS 26 Tahoe.
 
-**Note**: For Download Full Installer running on macOS 11+, you can get the [version 2.0](https://github.com/perez987/DownloadFullInstaller/releases/tag/2.0-139) or the Xcode project from the [`old`](https://github.com/perez987/DownloadFullInstaller/tree/old) branch and build the app from source.
+**Note**: For Download Full Installer running and compiling on macOS 11+, you can get the [version 2.0](https://github.com/perez987/DownloadFullInstaller/releases/tag/2.0-123) or the Xcode project from the [`old`](https://github.com/perez987/DownloadFullInstaller/tree/old) branch and build the app from source.
 
 ### Features
 
@@ -24,11 +24,7 @@ Download Full Installer runs on macOS 13 Ventura through macOS 26 Tahoe.
 - Added language selection system
 - Updated translations
 - Initial support for Liquid Glass with backward compatibility
-- Added download resume functionality that automatically handles network interruptions
-- Added progress bar overlaying to the application's dock tile icon during PKG downloads
-- Added support for up to 3 simultaneous downloads
-
-**Note**: Not all features are available in the macOS 11+ version
+- Added download resume functionality that automatically handles network interruptions.
 
 #### Create Installer App Feature
 
@@ -42,7 +38,7 @@ After downloading an InstallAssistant.pkg file, you can create the macOS install
 
 ### App is damaged and can't be opened
 
-If you see `App is damaged and can't be opened` when you open DownloadFullInstaller for the first time, read [this](DOCS/App-damaged.md).
+If you see `App is damaged and can't be opened` when you open DownloadFullInstaller for the first time, read [this](App-damaged.md).
 
 ### Download appears to be complete, but the installer is not in the Downloads folder
 
